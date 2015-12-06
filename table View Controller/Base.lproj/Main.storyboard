@@ -27,7 +27,7 @@
         <!--Table View Controller-->
         <scene sceneID="lS6-ty-nl2">
             <objects>
-                <tableViewController id="UVT-ie-xKH" sceneMemberID="viewController">
+                <tableViewController id="UVT-ie-xKH" customClass="TableViewController" customModule="table_View_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4V3-yd-EnY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
