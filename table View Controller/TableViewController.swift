@@ -67,6 +67,13 @@ class TableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        let alert = UIAlertController(title: "Accessory Tapped", message: "You have tapped accessory for \(testData[indexPath.row])", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
