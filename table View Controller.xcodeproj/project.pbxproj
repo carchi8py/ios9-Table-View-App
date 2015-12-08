@@ -25,6 +25,7 @@
 		279D22651C13BEBA001B8B83 /* uk.png in Resources */ = {isa = PBXBuildFile; fileRef = 279D225B1C13BEBA001B8B83 /* uk.png */; };
 		279D22661C13BEBA001B8B83 /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 279D225C1C13BEBA001B8B83 /* usa.png */; };
 		279D22681C13BF71001B8B83 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D22671C13BF71001B8B83 /* TableViewController.swift */; };
+		279D226A1C168472001B8B83 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D22691C168472001B8B83 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		279D225B1C13BEBA001B8B83 /* uk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk.png; sourceTree = "<group>"; };
 		279D225C1C13BEBA001B8B83 /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
 		279D22671C13BF71001B8B83 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		279D22691C168472001B8B83 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				279D222E1C13B9B6001B8B83 /* LaunchScreen.storyboard */,
 				279D22311C13B9B6001B8B83 /* Info.plist */,
 				279D22671C13BF71001B8B83 /* TableViewController.swift */,
+				279D22691C168472001B8B83 /* CustomTableViewCell.swift */,
 			);
 			path = "table View Controller";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				279D22281C13B9B6001B8B83 /* ViewController.swift in Sources */,
 				279D22681C13BF71001B8B83 /* TableViewController.swift in Sources */,
+				279D226A1C168472001B8B83 /* CustomTableViewCell.swift in Sources */,
 				279D22261C13B9B6001B8B83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

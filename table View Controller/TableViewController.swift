@@ -31,6 +31,17 @@ class TableViewController: UITableViewController {
         "Spain",
         "United Kingdom",
         "United States of America"]
+    
+    var images = ["brazil.png",
+        "canada.png",
+        "china.png",
+        "germany.png",
+        "indonesia.png",
+        "japan.png",
+        "southafrica.png",
+        "spain.png",
+        "uk.png",
+        "usa.png"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,10 +71,11 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CustomTableViewCell
 
-        cell.textLabel?.text = testData[indexPath.row]
-        cell.detailTextLabel?.text = countries[indexPath.row]
+        cell.abbrLabel.text = testData[indexPath.row]
+        cell.nameLabel.text = countries[indexPath.row]
+        cell.flagImage.image = UIImage(named: images[indexPath.row])
 
         return cell
     }
@@ -89,6 +101,7 @@ class TableViewController: UITableViewController {
             // Delete the row from the data source
             testData.removeAtIndex(indexPath.row)
             countries.removeAtIndex(indexPath.row)
+            images.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             
         } else if editingStyle == .Insert {
@@ -102,10 +115,16 @@ class TableViewController: UITableViewController {
         var tempData2 = testData[toIndexPath.row]
         testData[fromIndexPath.row] = tempData2
         testData[toIndexPath.row] = tempData1
+        
         tempData1 = countries[fromIndexPath.row]
         tempData2 = countries[toIndexPath.row]
         countries[fromIndexPath.row] = tempData2
-        countries[fromIndexPath.row] = tempData1
+        countries[toIndexPath.row] = tempData1
+        
+        tempData1 = images[fromIndexPath.row]
+        tempData2 = images[toIndexPath.row]
+        images[fromIndexPath.row] = tempData2
+        images[toIndexPath.row] = tempData1
         
     }
 
